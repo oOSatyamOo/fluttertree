@@ -21,7 +21,7 @@ class AppDrawer extends StatelessWidget {
   }
 }
 
-List<DrawerOption> get drawerOptionsList=> [
+const List<DrawerOption>   drawerOptionsList= [
   DrawerOption(title: 'Image', icon: Icons.image),
   DrawerOption(title: 'Reports', icon: Icons.photo_filter),
   DrawerOption(title: 'Summery', icon: Icons.message),
