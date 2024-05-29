@@ -1,0 +1,6 @@
+Design pattern
+- Factory Method: Delegate tasks like a boss! Focus on the big picture while your code handles the details.
+- Builder Pattern: Build complex objects step-by-step, exactly how you want them. No more messy all-in-one creation!
+- Singleton Pattern: Ensure only one instance of a class exists, like a security guard at a party.
+- Adapter Pattern: Connect the unconnectable! Integrate different systems and data sources with ease.
+- Observer Pattern: Spread the news! Keep different parts of your code informed about changes, like a news agency with subscribers.
