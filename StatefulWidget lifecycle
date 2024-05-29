@@ -1,0 +1,27 @@
+Life Cycle Of StatefulWidget in Flutter
+
+1️⃣createState():
+It's like giving your widget a brain. This method sets up the backstage crew for your app.
+
+2️⃣initState():
+Time to prepare the stage! After the widget is born, we set things up, like giving it some initial values.
+
+3️⃣didChangeDependencies():
+Quick changes behind the scenes, like adjusting the spotlight when your widget is already on stage.
+
+4️⃣build():
+The main show! This method decides what your audience (your app) sees on the screen every time something changes.
+
+5️⃣didUpdateWidget():
+Imagine a script rewrite. This is called when the widget's role changes, like when a parent tells its child to do something new.
+
+6️⃣setState():
+Like saying, "Hey, something has changed, let's redo the scene!" It triggers a rebuild to show the latest changes.
+
+7️⃣ deactivate():
+The actor taking a break. Happens when the widget is temporarily taken off the stage but might come back later.
+
+8️⃣dispose():
+The grand finale! When the show is over for good, it's time to wrap things up and say goodbye.
+
+
