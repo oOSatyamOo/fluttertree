@@ -1,6 +1,6 @@
 import '../../domain/entities/artical_entity.dart';
 
-class ArticleModel extends ArticalEntity {
+class ArticleModel extends ArticleEntity {
   const ArticleModel({
     int? id,
     required super.author,
@@ -19,7 +19,7 @@ class ArticleModel extends ArticalEntity {
       title: js['title'] ?? '',
       description: js['description'] ?? '',
       url: js['url'] ?? '',
-      urlToImage: js['urlToImage'] ?? '',
+      urlToImage: js['urlToImage'],
       publishedAt: js['publishedAt'] ?? '',
       content: js['content'] ?? '',
     );

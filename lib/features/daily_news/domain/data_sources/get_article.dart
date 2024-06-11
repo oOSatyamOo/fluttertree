@@ -4,14 +4,14 @@ import '../entities/artical_entity.dart';
 import '../repository/article_repository.dart';
 
 class GetArticleUseCase
-    implements Usecase<DataState<List<ArticalEntity>>, void> {
+    implements Usecase<DataState<List<ArticleEntity>>, void> {
   final ArticleRepository _articleRepository;
 
   GetArticleUseCase({required ArticleRepository articleRepository})
       : _articleRepository = articleRepository;
 
   @override
-  Future<DataState<List<ArticalEntity>>> call({void params}) {
+  Future<DataState<List<ArticleEntity>>> call({void params}) {
     return _articleRepository.getNewsArticles();
   }
 }

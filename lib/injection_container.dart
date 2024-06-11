@@ -1,3 +1,4 @@
+import 'package:fluttertree/features/daily_news/domain/repository/article_repository.dart';
 import 'package:get_it/get_it.dart';
 import 'package:dio/dio.dart';
 
@@ -14,7 +15,8 @@ Future<void> initializeDependencies() async {
   //Dependencies
   s1.registerSingleton<NewsApiService>(NewsApiService(s1()));
 
-  s1.registerSingleton<ArticalImpl>(ArticalImpl(newsApiService: s1()));
+// Repo can not be instance contract rather implementation
+  s1.registerSingleton<ArticleRepository>(ArticleImpl(newsApiService: s1()));
 
   //usecases
   s1.registerSingleton<GetArticleUseCase>(
